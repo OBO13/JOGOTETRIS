@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".TelaJogo">
+
+    <GridLayout
+        android:id="@+id/gridboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00BCD4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEsquerda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00BCD4"
+            android:text="Esquerda"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnGirar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00BCD4"
+            android:text="Girar"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnDireta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00BCD4"
+            android:text="Direita"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnDescer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00BCD4"
+            android:text="Descer"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>
