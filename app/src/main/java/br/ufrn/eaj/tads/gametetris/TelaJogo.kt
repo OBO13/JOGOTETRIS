@@ -19,7 +19,7 @@ class TelaJogo : AppCompatActivity() {
     var running = true
     var speed: Long = 300
 
-    var pt = PecaI(4, 12)
+    var pt = obj3(4, 12)
 
     //val board = Array(LINHA, { IntArray(COLUNA) })
 
@@ -115,7 +115,7 @@ class TelaJogo : AppCompatActivity() {
                         board[pt.pontoB.x][pt.pontoB.y] = 1
                         board[pt.pontoC.x][pt.pontoC.y] = 1
                         board[pt.pontoD.x][pt.pontoD.y] = 1
-                        pt = PecaI(0, 12)
+                        pt = obj3(0, 12)
                     }
 
                     boardView[pt.pontoA.x][pt.pontoA.y]!!.setImageResource(R.drawable.white)

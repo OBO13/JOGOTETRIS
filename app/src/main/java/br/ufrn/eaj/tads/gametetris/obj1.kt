@@ -1,11 +1,11 @@
 package br.ufrn.eaj.tads.gametetris
 
-class PecaI(x:Int ,y:Int) : Peca(x,y) {
+class obj1(x:Int ,y:Int) : pecas(x,y) {
 
     init {
         pontoB = Ponto(x, y - 1);
         pontoC = Ponto(x, y + 1);
-        pontoD = Ponto(x, y + 2);
+        pontoD = Ponto(x + 1, y + 1);
     }
 
     override fun moverBaixo() {
