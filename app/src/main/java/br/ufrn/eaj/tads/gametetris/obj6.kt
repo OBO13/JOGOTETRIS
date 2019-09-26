@@ -5,7 +5,7 @@ class obj6(x:Int ,y:Int) : pecas(x,y) {
 
     init {
         pontoB = Ponto(x, y - 1);
-        pontoC = Ponto(x+1,y);
+        pontoC = Ponto(x + 1, y);
         pontoD = Ponto(x + 1, y + 1);
     }
 
@@ -32,27 +32,25 @@ class obj6(x:Int ,y:Int) : pecas(x,y) {
 
     override fun girar() {
         if(!rotated) {
-            pontoB.x--
-            pontoB.y++
-
-            pontoC.x++
-            pontoC.y--
-
-            pontoD.y -= 2
-            pontoD.x += 2
-
-            rotated = true
-        } else {
             pontoB.x++
-            pontoB.y--
+            pontoB.y++
 
             pontoC.x--
             pontoC.y++
 
-            pontoD.y += 2
             pontoD.x -= 2
 
+            rotated = true
+        } else {
+            pontoB.x--
+            pontoB.y--
+
+            pontoC.x++
+            pontoC.y--
+
+            pontoD.x += 2
+
             rotated = false
+            }
         }
     }
-}

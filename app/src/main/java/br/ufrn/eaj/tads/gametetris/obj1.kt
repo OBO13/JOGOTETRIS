@@ -38,8 +38,6 @@ class obj1(x:Int ,y:Int) : pecas(x,y) {
             pontoC.y--
 
             pontoD.y -= 2
-            pontoD.x += 2
-
             rotated = true
         } else {
             pontoB.x++
@@ -49,7 +47,6 @@ class obj1(x:Int ,y:Int) : pecas(x,y) {
             pontoC.y++
 
             pontoD.y += 2
-            pontoD.x -= 2
 
             rotated = false
         }

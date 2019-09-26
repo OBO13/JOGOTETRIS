@@ -32,24 +32,21 @@ class obj4(x:Int ,y:Int) : pecas(x,y) {
     override fun girar() {
         if(!rotated) {
             pontoB.x--
-            pontoB.y++
-
-            pontoC.x++
-            pontoC.y--
-
-            pontoD.y -= 2
-            pontoD.x += 2
-
-            rotated = true
-        } else {
-            pontoB.x++
             pontoB.y--
 
             pontoC.x--
             pontoC.y++
 
             pontoD.y += 2
-            pontoD.x -= 2
+            rotated = true
+        } else {
+            pontoB.x++
+            pontoB.y++
+
+            pontoC.x++
+            pontoC.y--
+
+            pontoD.y -= 2
 
             rotated = false
         }

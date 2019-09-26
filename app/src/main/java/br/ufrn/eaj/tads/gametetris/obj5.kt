@@ -38,8 +38,8 @@ class obj5(x:Int ,y:Int) : pecas(x,y) {
             pontoC.x++
             pontoC.y--
 
-            pontoD.y -= 2
-            pontoD.x += 2
+            pontoD.x--
+            pontoD.y--
 
             rotated = true
         } else {
@@ -49,8 +49,8 @@ class obj5(x:Int ,y:Int) : pecas(x,y) {
             pontoC.x--
             pontoC.y++
 
-            pontoD.y += 2
-            pontoD.x -= 2
+            pontoD.y++
+            pontoD.x++
 
             rotated = false
         }
